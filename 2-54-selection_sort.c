@@ -34,7 +34,7 @@ void print_int_array(int *s, int n) {
 
 int main(int argc, char const *argv[]) {
   int a[MAX] = {0};
-  if (argc < 2) {
+  if (argc < 3) {
     fprintf(stderr, "Usage: ./2-54-selection_sort [Size of Array] (< 100) "
                     "[Array Elements]\n");
     return 1;
