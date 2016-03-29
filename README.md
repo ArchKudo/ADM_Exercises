@@ -1,2 +1,2 @@
 # ADM Exercises
-Exercises based on Algorithm Design Manual by Skiena, Steven. S.
+Exercises based on Algorithm Design Manual by Skiena, Steve. S.
