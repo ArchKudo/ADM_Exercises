@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define S_INT(n) sizeof(n) / sizeof(int)
+#define SIZE_INT(n) sizeof(n) / sizeof(int)
 #define MAX 100
 
 void swap(int *a, int *b) {
@@ -12,8 +12,8 @@ void swap(int *a, int *b) {
   *b = temp;
 }
 
-void insert_sort(int *s, int n) {
-  int i = 0, j = 0, temp = 0;
+void insertion_sort(int *s, int n) {
+  int i = 0, j = 0;
   for (i = 1; i < n; i++) {
     j = i;
     while ((j > 0) && (s[j] < s[j - 1])) {
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
     a[i] = atoi(argv[i + 2]);
   }
   print_int_array(a, n);
-  insert_sort(a, n);
+  insertion_sort(a, n);
   print_int_array(a, n);
   return 0;
 }

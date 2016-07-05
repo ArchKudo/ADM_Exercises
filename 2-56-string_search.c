@@ -21,7 +21,7 @@ int find_match(char *pin, char *hay) {
 
 int main(int argc, char *argv[]) {
   if (argc != 3) {
-    fprintf(stderr, "Usage: ./string_search hay pin\n");
+    fprintf(stderr, "Usage: ./string_search pin hay\n");
     return 1;
   }
   int check = find_match(argv[1], argv[2]);
